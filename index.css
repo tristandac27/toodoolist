@@ -1,0 +1,132 @@
+.container {
+    width: 100%;
+    height: 100%;
+    --s: 200px; /* control the size */
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+  
+    background: repeating-conic-gradient(
+          from 30deg,
+          #0000 0 120deg,
+          var(--c3) 0 180deg
+        )
+        calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+      repeating-conic-gradient(
+        from 30deg,
+        var(--c1) 0 60deg,
+        var(--c2) 0 120deg,
+        var(--c3) 0 180deg
+      );
+    background-size: var(--s) calc(var(--s) * 0.577);
+  }
+  
+  .input-container {
+
+  gap: 10px;
+  margin-top: 00px;
+  justify-content: center;
+  text-align: center; 
+}
+  .search-bar {
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #303030;
+    border-bottom: 2px solid #de00a3;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #2d2d2d;
+    color: rgb(245, 6, 181);
+    transition: all 0.3s ease;
+  }
+  #add-task-button {
+    height: 35px;
+    background-color: #2d2d2d;
+    color: rgb(233, 0, 167);
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #add-task-button:hover {
+    background-color: #313131;
+  }
+  
+  #add-task-button:active,
+  #add-task-button:focus {
+    background-color: #1e1f20;
+    border: 1px solid #2d2d2d;
+    border-bottom: 2px solid #4cc2ff;
+  }
+  
+  #tasks-container {
+    width: 60%;
+    margin: 50px auto; /* Centrer le cadre */
+    padding: 20px;
+    border-radius: 10px;
+
+   
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card {
+    width: 100%; /* Utiliser la largeur complète */
+    border-radius: 1rem;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  }
+  
+  .task-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #c71175; /* Couleur du texte en violet */
+  }
+  
+  .task-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-details {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .task-details h2,
+  .task-details p {
+    margin: 0;
+    color: #bf0578;
+  }
+  .delete-task-button {
+    background-color: #2d2d2d;
+    color: #e900a7;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .edit-task-button {
+    background-color: #2d2d2d;
+    color: #e900a7;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
