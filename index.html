@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<h1 style="text-align: center; color: rgb(215, 0, 133);">Todo List</h1>
+<body class="container">
+    <div id="tasks-container"></div> 
+    <div id="task-template" class="card" style="display: none;">
+    <h2></h2>
+    <p></p>
+</div>
+    <div class="input-container">
+        <input
+            type="text"
+            id="task-input"
+            class="search-bar"
+            placeholder="Type title"
+        />
+        <input
+            type="text"
+            id="task-description-input"
+            class="search-bar"
+            placeholder="Type description"
+        />
+        <button id="add-task-button">Add Task</button>
+    </div>
+ 
+    <script src="client.js"></script>
+</body>
+</html>
